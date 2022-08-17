@@ -1,7 +1,9 @@
 import React from 'react';
 import { Grid, Box, Container, CssBaseline } from '@mui/material';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
-import { CustomerData } from '../Constant';
+import CustomerData from '../utils/customerDetail';
+import IconsSrc from '../utils/icons';
+//Customer component 
 const Customerpage = () => {
   return (
     <>
@@ -16,12 +18,13 @@ const Customerpage = () => {
             alignItems="center"
           >
             <input className='customer-search' type="text" placeholder='Search here...' ></input>
-            <img src='/icons/filter.svg' alt='no icon' style={{ marginTop: '30px' }}></img>
-            <img src='/icons/threedots.svg' alt='no icon' style={{ marginTop: '30px' }}></img>
+            <img src={IconsSrc.Filter} alt='no icon' style={{ marginTop: '30px' }}></img>
+            <img src={IconsSrc.ThreeDot} alt='no icon' style={{ marginTop: '30px' }}></img>
           </Grid>
           <TableContainer style={{ marginTop: "20px" }} component={Paper} maxWidth="100%">
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead style={{ backgroundColor: '#e2e2ea' }}>
+              {/*it table head which inculde table heading this material ui tags*/}
                 <TableRow   >
                   <TableCell align='center'><div className='customer-row'>ID</div></TableCell>
                   <TableCell align="center"><div className='customer-row'>Name</div></TableCell>
@@ -37,6 +40,7 @@ const Customerpage = () => {
                     key={row.name}
 
                   >
+                  {/* this table cell which have data from maping to array of object*/}
                     <TableCell style={{ border: 'none' }} aling="center"> {row.id} </TableCell>
                     <TableCell style={{ border: 'none' }} align="center">{row.name}</TableCell>
                     <TableCell style={{ border: 'none' }} align="center">{row.join}</TableCell>
