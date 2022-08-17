@@ -2,11 +2,13 @@
 import './App.css';
 import Sidebar from './Components/Sidebar';
 import Navbar from './Components/Navbar';
-import Homapage from './Components/Homapage';
+import Home from './pages/Home';
+import Customer from './pages/Customer';
+// router is imported for make page chage as per url change
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
-import Customerpage from './Components/Customer';
 function App() {
   return (
+    //main layout which make by grid 
     <>
     <div class="page-design">
   <Router>
@@ -14,8 +16,8 @@ function App() {
   <div class="Sidbar"><Sidebar/></div>
   <div class="Content">
       <Routes>
-        <Route exact path="/" element={<Homapage/>}/>
-        <Route exact path="/Customer" element={<Customerpage/>}/>
+        <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/Customer" element={<Customer/>}/>
       </Routes>
       </div>
       </Router>
