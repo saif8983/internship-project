@@ -1,9 +1,11 @@
 import "../App.css"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+// All icons are imported by constant file which variable have array of object
 import { IconsSrc } from "../Constant"
-
+//sidebar component
 const Sidebar = () => {
+  //usestate used for change icon background change in inline css
   const [homebackGroundColor,setHomeBackGroundColor]=useState('')
   const [customerBackGroundColor,setCustomerBackGroundColor]=useState('')
   const navigate = useNavigate()
