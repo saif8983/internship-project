@@ -1,3 +1,4 @@
+//icons detail and adress which export to sidebar navebar customer components
 const IconsSrc = {
     Home: "/icons/menu-grid-svgrepo-com.svg",
     Oders: "/icons/orders.svg",
