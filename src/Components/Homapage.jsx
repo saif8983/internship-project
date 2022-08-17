@@ -1,18 +1,13 @@
 import React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import { CardMedia, Typography } from '@mui/material';
-import { CardActionArea } from '@mui/material';
-import { Food, Drinks } from '../Constant';
+import {Box,Container ,Grid,CssBaseline} from '@mui/material'
+import { CardMedia,CardContent,Card,CardActionArea, Typography } from '@mui/material';
+import { Food, Drinks } from '../utils/Item';
+//Homepage commponent 
 const Homapage = () => {
   return (
     <>
       <CssBaseline />
-
+{/*Container containe boxes which is maximum width*/}
       <Container maxWidth="100%" style={{ padding: '20px' }}>
         <Box sx={{ bgcolor: '#ffffff', height: '100vh' }} >
 
@@ -34,6 +29,7 @@ const Homapage = () => {
           <hr className='home-hr'></hr>
           <div className='food-title' style={{ marginTop: '30px' }}><h3>Food</h3></div>
           <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+          {/*Food is array of object which map all data of it in item*/}
             {Food.map((item, index) => (
               <Grid xs={2} sm={4} md={4} key={index}>
                 <Card sx={{ maxWidth: '300px' }} style={{ margin: "50px" }}>
@@ -44,6 +40,7 @@ const Homapage = () => {
                       image={item.img}
                       alt="No Image"
                     />
+                    {/*cardcontent is card detail which have data*/}
                     <CardContent>
                       <Typography gutterBottom  component="div">
                        <div className='card-name-home'>{item.name}</div> 
