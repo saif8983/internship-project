@@ -1,3 +1,4 @@
+//This customer in form of array of object export in customer page
 const CustomerData = [{
     id: 'XXX1',
     name: 'Arlene McCoy',
