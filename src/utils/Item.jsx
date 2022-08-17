@@ -1,3 +1,4 @@
+// item information of food and drinks in array of object which show in homepage with photos
 const Food = [{
     img: '/images/shahimi.jpeg',
     name: 'Sashimi',
