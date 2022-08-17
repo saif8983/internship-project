@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0819309d.css",
+    "main.js": "/static/js/main.b2271458.js",
+    "static/js/787.1b50ba4a.chunk.js": "/static/js/787.1b50ba4a.chunk.js",
+    "static/media/Mulish-Black.ttf": "/static/media/Mulish-Black.ad8f92f27be9ae6e6562.ttf",
+    "static/media/Mulish-ExtraBold.ttf": "/static/media/Mulish-ExtraBold.61c03ebfe9301ddd19cb.ttf",
+    "static/media/Mulish-Regular.ttf": "/static/media/Mulish-Regular.06ce9c37c31ae94797a2.ttf",
+    "static/media/Mulish-Bold.ttf": "/static/media/Mulish-Bold.1f6c3935d7359190d7dd.ttf",
+    "static/media/Mulish-Light.ttf": "/static/media/Mulish-Light.32d3ca7c26b8c1c80176.ttf",
+    "static/media/Mulish-ExtraLight.ttf": "/static/media/Mulish-ExtraLight.59d02b9b29b5996fb922.ttf",
+    "static/media/SEARCH.svg": "/static/media/SEARCH.549e671f643962e52225.svg",
+    "index.html": "/index.html",
+    "main.0819309d.css.map": "/static/css/main.0819309d.css.map",
+    "main.b2271458.js.map": "/static/js/main.b2271458.js.map",
+    "787.1b50ba4a.chunk.js.map": "/static/js/787.1b50ba4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0819309d.css",
+    "static/js/main.b2271458.js"
+  ]
+}
